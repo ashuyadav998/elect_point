@@ -1,0 +1,169 @@
+.admin-orders {
+  max-width: 100%;
+}
+
+.orders-stats {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  color: #7f8c8d;
+  font-size: 0.95rem;
+}
+
+.stat-item strong {
+  color: #2c3e50;
+  font-size: 1.1rem;
+  margin-left: 5px;
+}
+
+.customer-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.customer-cell strong {
+  color: #2c3e50;
+}
+
+.customer-cell small {
+  color: #7f8c8d;
+  font-size: 0.85rem;
+}
+
+/* Modal de detalle del pedido */
+.order-detail {
+  padding: 25px;
+}
+
+.detail-section {
+  margin-bottom: 30px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.detail-section:last-child {
+  border-bottom: none;
+}
+
+.detail-section h4 {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.info-grid div {
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 6px;
+}
+
+.info-grid strong {
+  display: block;
+  color: #7f8c8d;
+  font-size: 0.85rem;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.order-items {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.order-item {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.order-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.order-item .item-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.order-item .item-details strong {
+  color: #2c3e50;
+  font-size: 1rem;
+}
+
+.order-item .item-details span {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+.order-item .item-price {
+  font-weight: 600;
+  color: #27ae60;
+  text-align: right;
+}
+
+.order-total {
+  text-align: right;
+  padding: 15px 0;
+  font-size: 1.2rem;
+  color: #2c3e50;
+  border-top: 2px solid #dee2e6;
+  margin-top: 15px;
+}
+
+.status-update-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  align-items: end;
+}
+
+.status-update-form .btn {
+  grid-column: span 2;
+}
+
+@media (max-width: 768px) {
+  .orders-stats {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .status-update-form {
+    grid-template-columns: 1fr;
+  }
+
+  .status-update-form .btn {
+    grid-column: span 1;
+  }
+
+  .order-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .order-item .item-price {
+    text-align: center;
+  }
+}
